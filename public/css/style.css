@@ -1,0 +1,114 @@
+body {
+  background-image: url('https://i.imgur.com/dVtFbKe.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.low-usage {
+color: green;
+}
+
+.medium-usage {
+color: black;
+}
+
+.high-usage {
+color: red;
+}
+
+#temperature {
+  font-size: 60px;
+  text-align: center;
+}
+
+#temperature-up {
+  height: 50px;
+  width: 50px;
+}
+
+#temperature-down {
+  height: 50px;
+  width: 50px;
+}
+
+#temperature-reset {
+  height: 104px;
+  width: 104px;
+}
+
+#location {
+  text-align: center;
+}
+
+#powersaving-on{
+  width: 50px;
+  height: 50px;
+}
+
+#powersaving-off{
+  width: 50px;
+  height: 50px;
+}
+
+button {
+  border-radius: 50%;
+}
+
+#controls {
+  text-align: center;
+}
+
+#portal {
+    width: 6em;
+    height: 8em;
+    font-size: 2em;
+    text-align: center;
+    line-height: 5em;
+    margin: 1em auto;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#portal:before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: url(https://hackadaycom.files.wordpress.com/2018/08/portal.png?w=646);
+    background-position: center;
+    background-size: contain;
+}
+
+#portal:before {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  10% { transform: rotate(36deg) }
+  20% { transform: rotate(72deg) }
+  30% { transform: rotate(108deg) }
+  40% { transform: rotate(144deg) }
+  50% { transform: rotate(180deg) }
+  60% { transform: rotate(216deg) }
+  70% { transform: rotate(252deg) }
+  80% { transform: rotate(288deg) }
+  90% { transform: rotate(324deg) }
+  100% { transform: rotate(359deg) }
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
